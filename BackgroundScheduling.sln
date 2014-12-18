@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundScheduling", "JobScheduler\BackgroundScheduling.csproj", "{EC741351-93E1-4AA5-9D8F-91F71F2A6F9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobSchedulerTests", "JobSchedulerTests\JobSchedulerTests.csproj", "{60CBED3D-DBBB-4308-941C-56287ADC72D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC741351-93E1-4AA5-9D8F-91F71F2A6F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC741351-93E1-4AA5-9D8F-91F71F2A6F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC741351-93E1-4AA5-9D8F-91F71F2A6F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC741351-93E1-4AA5-9D8F-91F71F2A6F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60CBED3D-DBBB-4308-941C-56287ADC72D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60CBED3D-DBBB-4308-941C-56287ADC72D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60CBED3D-DBBB-4308-941C-56287ADC72D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60CBED3D-DBBB-4308-941C-56287ADC72D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
