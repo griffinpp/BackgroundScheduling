@@ -20,16 +20,16 @@ namespace JobSchedulerTests
         [TestFixtureSetUp]
         public void SetUp()
         {
-            JobScheduler.Instance.Started += new JobSchedulerEventHandler(JobScheduler_Started);
-            JobScheduler.Instance.Stopped += new JobSchedulerEventHandler(JobScheduler_Stopped);
-            JobScheduler.Instance.Paused += new JobSchedulerEventHandler(JobScheduler_Paused);
-            JobScheduler.Instance.JobAdded += new JobSchedulerEventHandler(JobScheduler_JobAdded);
-            JobScheduler.Instance.JobRemoved += new JobSchedulerEventHandler(JobScheduler_JobRemoved);
-            JobScheduler.Instance.JobQueueStart += new JobSchedulerEventHandler(JobScheduler_JobQueueStart);
-            JobScheduler.Instance.JobQueueEnd += new JobSchedulerEventHandler(JobScheduler_JobQueueEnd);
-            JobScheduler.Instance.JobStart += new JobSchedulerEventHandler(JobScheduler_JobStart);
-            JobScheduler.Instance.JobEnd += new JobSchedulerEventHandler(JobScheduler_JobEnd);
-            JobScheduler.Instance.JobFailed += new JobSchedulerEventHandler(JobScheduler_JobFailed);
+            JobScheduler.Instance.Started += JobScheduler_Started;
+            JobScheduler.Instance.Stopped += JobScheduler_Stopped;
+            JobScheduler.Instance.Paused += JobScheduler_Paused;
+            JobScheduler.Instance.JobAdded += JobScheduler_JobAdded;
+            JobScheduler.Instance.JobRemoved += JobScheduler_JobRemoved;
+            JobScheduler.Instance.JobQueueStart += JobScheduler_JobQueueStart;
+            JobScheduler.Instance.JobQueueEnd += JobScheduler_JobQueueEnd;
+            JobScheduler.Instance.JobStart += JobScheduler_JobStart;
+            JobScheduler.Instance.JobEnd += JobScheduler_JobEnd;
+            JobScheduler.Instance.JobFailed += JobScheduler_JobFailed;
         }
 
         //Stop the JobScheduler and clear its job queue after every test (Remember to restart it explicitly in tests that require it to be running!)

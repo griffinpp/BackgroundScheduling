@@ -82,17 +82,17 @@ namespace BackgroundScheduling
         
         #region Events
 
-        public event JobSchedulerEventHandler Started;
-        public event JobSchedulerEventHandler Stopped;
-        public event JobSchedulerEventHandler Paused;
-        public event JobSchedulerEventHandler JobAdded;
-        public event JobSchedulerEventHandler JobRemoved;
-        public event JobSchedulerEventHandler JobQueueCleared;
-        public event JobSchedulerEventHandler JobQueueStart;
-        public event JobSchedulerEventHandler JobStart;
-        public event JobSchedulerEventHandler JobEnd;
-        public event JobSchedulerEventHandler JobFailed;
-        public event JobSchedulerEventHandler JobQueueEnd;
+        public event EventHandler<JobSchedulerEventArgs> Started;
+        public event EventHandler<JobSchedulerEventArgs> Stopped;
+        public event EventHandler<JobSchedulerEventArgs> Paused;
+        public event EventHandler<JobSchedulerEventArgs> JobAdded;
+        public event EventHandler<JobSchedulerEventArgs> JobRemoved;
+        public event EventHandler<JobSchedulerEventArgs> JobQueueCleared;
+        public event EventHandler<JobSchedulerEventArgs> JobQueueStart;
+        public event EventHandler<JobSchedulerEventArgs> JobStart;
+        public event EventHandler<JobSchedulerEventArgs> JobEnd;
+        public event EventHandler<JobSchedulerEventArgs> JobFailed;
+        public event EventHandler<JobSchedulerEventArgs> JobQueueEnd;
 
         private void OnStarted(JobSchedulerEventArgs e)
         {

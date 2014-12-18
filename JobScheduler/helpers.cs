@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace BackgroundScheduling
 {
@@ -24,6 +21,4 @@ namespace BackgroundScheduling
         public string JobName { get; set; }
         public DateTime TimeStamp { get; set; }
     }
-
-    public delegate void JobSchedulerEventHandler(object sender, JobSchedulerEventArgs e);
 }
