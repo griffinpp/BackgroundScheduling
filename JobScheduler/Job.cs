@@ -15,10 +15,4 @@ namespace BackgroundScheduling
         public int Interval { get; set; }
         public DateTime LastRun { get; set; }
     }
-
-    public class JobSchedulerEventArgs : EventArgs
-    {
-        public string JobName { get; set; }
-        public DateTime TimeStamp { get; set; }
-    }
 }
